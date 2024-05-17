@@ -48,6 +48,7 @@ class harmonic:
 class simple_mc:
     
     def __init__(self, seed=0):
+        self.seed = seed
         self._rng = np.random.default_rng(seed)
         self.external_pe = []
         self.counter = [0, 0]
